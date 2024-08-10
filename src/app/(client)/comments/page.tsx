@@ -1,6 +1,5 @@
 import React from 'react';
 import {commentService} from "@/app/services/api.service";
-import CommentComponent from "@/app/components/CommentComponent";
 import Link from "next/link";
 
 const CommentsPage = async () => {

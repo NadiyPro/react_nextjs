@@ -1,6 +1,4 @@
-import React, {FC} from 'react';
-import {Params} from "next/dist/shared/lib/router/utils/route-matcher";
-import UserComponent from "@/app/components/UserComponent";
+import React  from 'react';
 import Link from "next/link";
 
 
