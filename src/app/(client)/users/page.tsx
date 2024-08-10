@@ -1,11 +1,11 @@
 import React from 'react';
 import UsersComponent from "@/app/components/UsersComponent";
 
-const UsersPage = async ({user}) => {
+const UsersPage = async () => {
 
     return (
         <div>
-            <UsersComponent user={user}/>
+            <UsersComponent/>
         </div>
     );
 };
