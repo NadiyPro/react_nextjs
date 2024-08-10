@@ -3,7 +3,7 @@ import {userService} from "@/app/services/api.service";
 import Link from "next/link";
 
 
-const UsersComponent = async () => {
+const UsersComponent= async () => {
     let allUsers = await userService.getAllUsers();
     return (
         <div>

@@ -1,7 +1,7 @@
 import React from 'react';
 import UsersComponent from "@/app/components/UsersComponent";
 
-const UsersPage = async () => {
+const UsersPage =  () => {
 
     return (
         <div>
