@@ -11,7 +11,7 @@ const PostsComponent = async () => {
                 allPosts.map(post => <div key={post.id}> <PostComponent key={post.id} post={post}/>
                     <button><Link href={{
                         pathname: '/posts/' + post.userId + '/comments',
-                        query: {data: post.userId}
+                        query: {id: post.userId}
                     }}>comments</Link></button>
                 </div>)
             }
