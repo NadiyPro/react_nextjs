@@ -3,13 +3,13 @@ import {postService} from "@/app/services/api.service";
 
 interface Params {
     searchParams: {
-       id:string;
+       data:string;
     }
 }
 
 const PostPage = async ({searchParams}: Params) => {
     console.log(searchParams);
-    let post = await postService.getById(+searchParams.id);
+    let post = await postService.getById(+searchParams.data);
     console.log(post);
 
     return (
