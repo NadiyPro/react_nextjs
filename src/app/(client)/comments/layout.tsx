@@ -1,14 +1,13 @@
-import React from 'react';
+import React from "react";
 import {Metadata} from "next";
 
 export const metadata: Metadata = {
-    title: 'Users'
-}
-
+     title: 'Comments'
+ }
 
 type Props = { children: React.ReactNode }
 
-const UsersLayout = ({children}: Props) => {
+const CommentsLayout= ({children}: Props) => {
     return (
         <div>
             {children}
@@ -16,4 +15,4 @@ const UsersLayout = ({children}: Props) => {
     );
 };
 
-export default UsersLayout;
+export default CommentsLayout;
