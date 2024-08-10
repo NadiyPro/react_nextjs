@@ -12,7 +12,7 @@ const postService = {
             .then(value => value.json())]);
         return response;
     },
-    getById: async (id:number):Promise<IPost[]>=> {
+    getById: async (id: string):Promise<IPost[]>=> {
         let [response] = await Promise.all([fetch('https://jsonplaceholder.typicode.com/users/' + id + '/posts')
             .then(value => value.json())]);
         return response;
