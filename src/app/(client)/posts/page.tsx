@@ -1,18 +1,12 @@
-import {Metadata} from "next";
-import React from "react";
+import React from 'react';
+import PostsComponent from "@/app/components/PostsComponent";
 
-export const metadata: Metadata = {
-     title: 'PostsLayout metadata'
- }
-
-type Props = { children: React.ReactNode }
-
-const PostsLayout= ({children}: Props) => {
+const Page = () => {
     return (
         <div>
-            {children}
+            <PostsComponent/>
         </div>
     );
 };
 
-export default PostsLayout;
+export default Page;
