@@ -15,7 +15,6 @@ const UsersPage = async () => {
                         <Link href={{pathname: '/users/' + value.id, query: {data: JSON.stringify(value)}}}>{value.username}</Link>
                     </li>)
 
-
                 }
             </ul>
         </div>
