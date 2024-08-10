@@ -9,7 +9,7 @@ interface Params {
 
 const PostPage = async ({searchParams}: Params) => {
     console.log(searchParams);
-    let post = await postService.getById(+searchParams.id);
+    let post = await postService.getById(+JSON.parse(searchParams.id))
     console.log(post);
 
     return (
