@@ -1,15 +1,16 @@
 import React from 'react';
 import {Params} from "next/dist/shared/lib/router/utils/route-matcher";
+import UserComponent from "@/app/components/UserComponent";
 
 
-const UserPage = ({searchParams}: Params) => {
+const UserPageId = ({searchParams}: Params) => {
     let user = JSON.parse(searchParams.data);
     console.log(user);
     return (
         <div>
-            {user.email}
+            <UserComponent key={user.id} user={user}/>
         </div>
     );
 };
 
-export default UserPage;
+export default UserPageId;

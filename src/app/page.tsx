@@ -1,10 +1,9 @@
-import styles from "./page.module.css";
+import UsersPage from "@/app/(client)/users/page";
 
 export default function Home() {
   return (
-      <main className={styles.main}>
-        hello
-
+      <main>
+          <UsersPage/>
       </main>
   );
 }

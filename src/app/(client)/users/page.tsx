@@ -1,22 +1,11 @@
 import React from 'react';
-import Link from "next/link";
-import {getAllUsers} from "@/app/services/api.service";
+import UsersComponent from "@/app/components/UsersComponent";
 
-const UsersPage = async () => {
-
-    let allUsers = await getAllUsers();
+const UsersPage = async ({user}) => {
 
     return (
         <div>
-            <ul>
-
-                {
-                    allUsers.map(value => <li key={value.id}>
-                        <Link href={{pathname: '/users/' + value.id, query: {data: JSON.stringify(value)}}}>{value.username}</Link>
-                    </li>)
-
-                }
-            </ul>
+            <UsersComponent user={user}/>
         </div>
     );
 };
