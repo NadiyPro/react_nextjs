@@ -1,5 +1,5 @@
 import React from 'react';
-import CommentsPage from "@/app/(client)/comments/page";import {postService} from "@/app/services/api.service";
+import {postService} from "@/app/services/api.service";
 interface Params {
     searchParams: {
         id:string

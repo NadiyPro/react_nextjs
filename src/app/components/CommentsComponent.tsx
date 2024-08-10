@@ -1,6 +1,5 @@
 import React from 'react';
 import {commentsService, postService} from "@/app/services/api.service";
-import PostComponent from "@/app/components/PostComponent";
 import Link from "next/link";
 import CommentComponent from "@/app/components/CommentComponent";
 
