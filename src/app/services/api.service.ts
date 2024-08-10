@@ -18,17 +18,4 @@ const postService = {
         return response;
     }
 };
-const commentsService = {
-    getAll: async ():Promise<IComment[]> => {
-        let [response] = await Promise.all([fetch('https://jsonplaceholder.typicode.com/comments')
-            .then(value => value.json())]);
-        return response;
-    },
-    getById: async (id:number):Promise<IComment[]>=> {
-        let [response] = await Promise.all([fetch('https://jsonplaceholder.typicode.com/posts/' + id + '/comments')
-            .then(value => value.json())]);
-        return response;
-    }
-}
-
-export {userService,postService,commentsService}
+export {userService,postService}

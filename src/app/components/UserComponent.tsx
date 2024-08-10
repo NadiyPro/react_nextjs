@@ -9,7 +9,7 @@ const UserComponent:FC<IProps> = ({user}) => {
                 id: {user.id} <br/> name: {user.name} <br/> email: {user.email} <br/>
                 <button><Link href={{
                     pathname: '/users/' + user.id + '/posts',
-                    query: {data: JSON.stringify(user.id)}
+                    query: {id: user.id}
                 }}>posts detail</Link>
                 </button>
         </div>
