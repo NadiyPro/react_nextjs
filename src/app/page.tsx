@@ -1,9 +1,9 @@
-import UsersPage from "@/app/(client)/users/page";
+import AllUsersPage from "@/app/(client)/users/page";
 
 export default function Home() {
   return (
       <main>
-          <UsersPage/>
+          <AllUsersPage/>
       </main>
   );
 }
